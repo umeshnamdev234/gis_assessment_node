@@ -91,7 +91,7 @@ The API relies on a database model named `PointDataModel` from the '../database'
 
 ### 1. Save Data
 
-#### Endpoint: `POST /api/save`
+#### Endpoint: `POST /point`
 
 Save geographical point data to the database.
 
@@ -116,7 +116,7 @@ Status Code: 500 (Internal Server Error) in case of any server-side issues.
 
 ### 2. Get List of Data
 
-#### Endpoint: `GET /api/list`
+#### Endpoint: `GET /point`
 
 Retrieve a list of all saved geographical point data.
 
@@ -128,7 +128,7 @@ Status Code: 500 (Internal Server Error) in case of any server-side issues.
 
 ### 3. Update Data
 
-#### Endpoint: `PUT /api/update/:id`
+#### Endpoint: `PUT /point/:id`
 
 Update existing geographical point data based on the specified ID.
 
@@ -171,7 +171,7 @@ The API relies on a database model named `PolygonDataModel` from the '../databas
 
 ### 1. Save Data
 
-#### Endpoint: `POST /api/polygon/save`
+#### Endpoint: `POST /polygon`
 
 Save geographical polygon data to the database.
 
@@ -196,7 +196,7 @@ Status Code: 500 (Internal Server Error) in case of any server-side issues.
 
 ### 2. Get List of Data
 
-#### Endpoint: `GET /api/polygon/list`
+#### Endpoint: `GET /polygon`
 
 Retrieve a list of all saved geographical polygon data.
 
@@ -208,7 +208,7 @@ Status Code: 500 (Internal Server Error) in case of any server-side issues.
 
 ### 3. Update Data
 
-#### Endpoint: `PUT /api/polygon/update/:id`
+#### Endpoint: `PATCH /polygon/:id`
 
 Update existing geographical polygon data based on the specified ID.
 
