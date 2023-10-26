@@ -75,6 +75,14 @@ Feel free to customize the routes and middleware according to your application's
 
 Nice set of functions there! Let's document the API:
 
+
+#Sequelize CLI 
+
+Please run the following command
+
+```bash
+  npx sequelize-cli db:migrate
+```
 -----------------------------------------------------------------------------
 
 # Point Data API
