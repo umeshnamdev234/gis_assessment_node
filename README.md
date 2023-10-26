@@ -73,6 +73,69 @@ The route definitions are located in the './routes' module. Ensure that your rou
 Feel free to customize the routes and middleware according to your application's requirements.
 
 
+---------------------------------------------------------------------------------------------------
+
+# Environment Configuration (.env) 
+
+## Overview
+
+This document provides information on the configuration settings stored in the `.env` file for the GIS Assessment application.
+
+## Database Configuration
+
+### `DB_HOST`
+
+- **Description:** Specifies the host where the database is located.
+- **Example Value:** `localhost`
+
+### `DB_NAME`
+
+- **Description:** Represents the name of the database used for the GIS Assessment application.
+- **Example Value:** `gis_assessment`
+
+### `DB_USER`
+
+- **Description:** Denotes the username used to connect to the database.
+- **Example Value:** `umesh`
+
+### `DB_PASSWORD`
+
+- **Description:** Contains the password required for database access.
+- **Example Value:** `umesh@dell`
+
+## Usage
+
+1. **Create the `.env` File:**
+   - Create a file named `.env` in the root directory of your GIS Assessment application.
+
+2. **Copy and Paste Configuration:**
+   - Copy the provided configuration settings above and paste them into the `.env` file.
+
+3. **Configure Values:**
+   - Replace the placeholder values with your actual database configuration details.
+
+   ```env
+   DB_HOST=localhost
+   DB_NAME=gis_assessment
+   DB_USER=umesh
+   DB_PASSWORD=umesh@dell
+   ```
+
+4. **Secure the File:**
+   - Ensure that the `.env` file is kept secure, especially in production environments.
+   - Avoid sharing this file in public repositories.
+
+## Notes
+
+- The `.env` file is crucial for managing sensitive information and environment-specific configurations.
+- Keep this file secure and do not expose sensitive information unintentionally.
+
+---
+
+
+# API postman collection link
+https://api.postman.com/collections/12790713-d7ad89b5-ccf6-4b96-9a65-7651be24536d?access_key=PMAT-01HDNK1MEHCAJBA7WXA06F7J6Y
+
 Nice set of functions there! Let's document the API:
 
 
@@ -241,65 +304,3 @@ Status Code: 400 (Bad Request) if the specified ID is not found or if both `name
 Status Code: 500 (Internal Server Error) in case of any server-side issues.
 
 
----------------------------------------------------------------------------------------------------
-
-# Environment Configuration (.env) 
-
-## Overview
-
-This document provides information on the configuration settings stored in the `.env` file for the GIS Assessment application.
-
-## Database Configuration
-
-### `DB_HOST`
-
-- **Description:** Specifies the host where the database is located.
-- **Example Value:** `localhost`
-
-### `DB_NAME`
-
-- **Description:** Represents the name of the database used for the GIS Assessment application.
-- **Example Value:** `gis_assessment`
-
-### `DB_USER`
-
-- **Description:** Denotes the username used to connect to the database.
-- **Example Value:** `umesh`
-
-### `DB_PASSWORD`
-
-- **Description:** Contains the password required for database access.
-- **Example Value:** `umesh@dell`
-
-## Usage
-
-1. **Create the `.env` File:**
-   - Create a file named `.env` in the root directory of your GIS Assessment application.
-
-2. **Copy and Paste Configuration:**
-   - Copy the provided configuration settings above and paste them into the `.env` file.
-
-3. **Configure Values:**
-   - Replace the placeholder values with your actual database configuration details.
-
-   ```env
-   DB_HOST=localhost
-   DB_NAME=gis_assessment
-   DB_USER=umesh
-   DB_PASSWORD=umesh@dell
-   ```
-
-4. **Secure the File:**
-   - Ensure that the `.env` file is kept secure, especially in production environments.
-   - Avoid sharing this file in public repositories.
-
-## Notes
-
-- The `.env` file is crucial for managing sensitive information and environment-specific configurations.
-- Keep this file secure and do not expose sensitive information unintentionally.
-
----
-
-
-# API postman collection link
-https://api.postman.com/collections/12790713-d7ad89b5-ccf6-4b96-9a65-7651be24536d?access_key=PMAT-01HDNK1MEHCAJBA7WXA06F7J6Y
